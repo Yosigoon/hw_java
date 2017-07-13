@@ -9,7 +9,7 @@ public class Bmi {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("성별을 입력하세요. 남 or 여 ");
 
-		String gender = scanner.nextLine();
+		String gender = scanner.next();
 
 		int a = 0;
 		if (gender.equals("여")) {
