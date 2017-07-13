@@ -16,6 +16,7 @@ public class WeatherDiscomfort {
 
 		double index = 0.72 * (dry + wet) + 40.6;
 		System.out.println("ºÒÄèÁö¼ö "+index);
+		
 
 		/*
 		 * double a= 0.72*(27.9+22.1)+40.6; System.out.println(a);
