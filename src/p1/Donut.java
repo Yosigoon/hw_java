@@ -10,10 +10,9 @@ public class Donut {
 
 		System.out.println("큰원의 반지름을 입력하세요 : ");
 		double r1 = scanner.nextInt();
-
 		System.out.println("작은원의 반지름을 입력하세요 : ");
 		double r2 = scanner.nextInt();
-
+	
 		double area1 = Math.PI * Math.pow(r1, 2); // 큰원의 넓이
 		double area2 = Math.PI * Math.pow(r2, 2); // 작은원의 넓이
 
