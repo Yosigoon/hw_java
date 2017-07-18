@@ -1,20 +1,15 @@
-package oop1;
+package oop2;
+
+import java.util.Arrays;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		TrainCalculator calculator = new TrainCalculator();
-		
-		TrainCalculatorUI ui = new TrainCalculatorUI(calculator);
-		
-		ui.calculate();
-		
-//		PiggySave save = new PiggySave();
-//		
-//		PiggySaveUI ui = new PiggySaveUI(save);
-//		
-//		ui.init();
-		
+		LottoMachine machine = new LottoMachine(45);
+			
+		LottoUI ui = new LottoUI(machine);
+		ui.showUsage();
+		ui.runTask();
 	}
 }
