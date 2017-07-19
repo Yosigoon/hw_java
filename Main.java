@@ -1,12 +1,13 @@
-package hw;
+package oop3;
 
 public class Main {
-	
-	public static void main(String[] args) {
+
+	public static void main(String[] args) throws Exception {
 		
-		CalculatorUI ui = new CalculatorUI();
-		ui.show();
+		QuizProvider provider = new QuizProvider();
+		QuizUI ui = new QuizUI(provider);
+		ui.welcome();
+		ui.participate();
 		
 	}
-
 }
