@@ -1,13 +1,18 @@
-package oop3;
+package food;
 
 public class Main {
+	
+	public static void main(String[] args) {
 
-	public static void main(String[] args) throws Exception {
-		
-		QuizProvider provider = new QuizProvider();
-		QuizUI ui = new QuizUI(provider);
-		ui.welcome();
-		ui.participate();
-		
+    FoodVO[] arr = new FoodVO[10];
+
+    for (int i = 0; i < arr.length; i++) {
+        arr[i] = new FoodVO("À½½Ä" + i, i * 1000);
+
+    }
+
+    FoodFinder finder = new FoodFinder(arr);
+    FoodFindUI ui = new FoodFindUI(finder);
+    ui.searchUI();
 	}
 }
