@@ -6,7 +6,7 @@ public class ChatClient {
 
 	public static void main(String[] args) throws Exception {
 
-		String ip = "192.168.0.30";
+		String ip = "192.168.0.43";
 		int port = 5555;
 		
 		Socket socket = new Socket(ip, port);

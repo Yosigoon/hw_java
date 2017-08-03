@@ -38,12 +38,16 @@ public class ChatAgent {
 
 	}
 
-	public void sendMsg() {
+	public void sendMsg() throws IOException {
+		
+		out.writeUTF("요시:입장");
+		
+		
 		while (true) {
 
-			String msg = scanner.nextLine();
+			String msg = "요시:"+scanner.nextLine();
 			try {
-				out.writeUTF("[요시]: "+msg);
+				out.writeUTF(msg);
 			} catch (IOException e) {
 				
 				e.printStackTrace();
